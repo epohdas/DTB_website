@@ -1,0 +1,149 @@
+/* Globálne nastavenia */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif, Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(109, 190, 75, 1) 0%, rgba(239, 144, 57, 1) 56%, rgba(126, 199, 142, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hlavička */
+header {
+    width: 100%;
+    background-color: #1c1c1c;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 a {
+    color: #33f177;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Vyhľadávací formulár */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    height: 40px;
+    padding: 0 10px;
+    border: 2px solid #5e5e5e;
+    border-radius: 5px;
+    outline: none;
+    background: #292929;
+    color: white;
+    margin-right: 10px;
+}
+
+.search-form input[type="text"]::placeholder {
+    color: #7e7e7e;
+}
+
+.search-form input[type="submit"] {
+    height: 40px;
+    background: #33f177;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in;
+}
+
+.search-form input[type="submit"]:hover {
+    background: #28c567;
+}
+
+/* Galéria */
+main {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-card {
+    background: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+    overflow: hidden;
+    width: calc(33% - 40px);
+    margin-bottom: 20px;
+    text-align: left;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #292929;
+}
+
+.user-info img.profile-pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-image {
+    width: 100%;
+    height: auto;
+}
+
+.image-info {
+    padding: 10px;
+}
+
+.image-info h3 {
+    margin: 10px 0 5px;
+}
+
+.image-info p {
+    margin: 5px 0;
+}
+
+/* Tlačidlo na odstránenie obrázka */
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}

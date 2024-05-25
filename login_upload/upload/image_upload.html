@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Shot</title>
+    <link rel="stylesheet" href="../login/css/image_upload.css">
+</head>
+<body>
+<header>
+    <h1><a href="index.php" class="logo-link">X-Shot</a></h1>
+</header>
+
+<form action="formhandling.php" method="post" enctype="multipart/form-data" id="obrazok">
+    <label for="fileToUpload">Select image to upload:</label>
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="text" name="nazov" id="nazov" placeholder="nazov obrazka">
+    <textarea form="obrazok" name="popis" id="popis" placeholder="sem napiste popis k obrazku"></textarea>
+    <label for="kategorie">Vyber kategoriu:</label>
+    <select id="kategorie" name="kategorie" form="obrazok">
+        <option value="priroda">priroda</option>
+        <option value="zver">zver</option>
+        <option value="budovy">budovy</option>
+        <option value="auta">auta</option>
+        <option value="psy">psy</option>
+        <option value="ludia">ludia</option>
+    </select>
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+<a href="profil.php" class="back-link">Späť</a>
+
+</body>
+</html>
